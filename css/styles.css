@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {text-decoration: none;}
+ul {list-style-type: none;}
+
+@font-face {
+    font-family: "Titillium Web";
+    font-style: normal;
+    font-weight: 300;
+    src:
+        local("TitilliumWeb-Light"),
+        local("Titillium Web Light"),
+        url(/fonts/TitilliumWeb-Light.woff2),
+        url(/fonts/TitilliumWeb-Light.ttf);
+}
+
+@font-face {
+    font-family: "Titillium Web";
+    font-style: normal;
+    font-weight: 400;
+    src:
+        local("TitilliumWeb"),
+        local("Titillium Web"),
+        url(/fonts/TitilliumWeb-Regular.woff2),
+        url(/fonts/TitilliumWeb-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Titillium Web";
+    font-style: normal;
+    font-weight: 600;
+    src:
+        local("TitilliumWeb-SemiBold"),
+        local("Titillium Web SemiBold"),
+        url(/fonts/TitilliumWeb-SemiBold.woff2),
+        url(/fonts/TitilliumWeb-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: "Titillium Web";
+    font-style: normal;
+    font-weight: 700;
+    src:
+        local("TitilliumWeb-Bold"),
+        local("Titillium Web Bold"),
+        url(/fonts/TitilliumWeb-Bold.woff2),
+        url(/fonts/TitilliumWeb-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Titillium Web";
+    font-style: italic;
+    font-weight: 400;
+    src:
+        local("TitilliumWeb-Italic"),
+        local("Titillium Web Italic"),
+        url(/fonts/TitilliumWeb-Italic.woff2),
+        url(/fonts/TitilliumWeb-Italic.ttf);
+}
+
+.width-wrapper {
+    outline: 1px dotted red;
+    width: 1102px;
+    margin: 0 auto 0 auto;
+}
+
+.header {
+    background-color: #87509c;
+    padding: 57px 0;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 118px;
+    height: 37px;
+    margin-left: 41px;
+}
+
+.menu__links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links__item {
+    margin: 0 10px;
+    padding: 10px 17px 9px 17px;
+}
+
+.links__item:hover {
+    background-color: #643a79;
+    border-radius: 5px;
+}
+
+.links__item a {
+    font-family: "Titillium Web";
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+}
