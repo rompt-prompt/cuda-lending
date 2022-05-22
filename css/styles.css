@@ -131,13 +131,15 @@ title:after {
 
 .items-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+
 }
 
 .item-block {
     width: 260px;
-    margin: 83px 40px 0;
     text-align: center;
+    margin-top: 63px;
 }
 
 .item-block__description {
@@ -300,4 +302,199 @@ title:after {
 
 .contact--e-mail {
     background: url(/images/icon_mail.png) no-repeat 50% 50%;
+}
+
+/*-------skills--------*/
+.skills {
+    padding: 119px 0 128px 0
+}
+
+.diagram {
+    width: 160px;
+    height: 160px;
+    margin: 0 auto 32px;
+}
+
+.diagram--90 {
+    background: url(/images/base_90.png) no-repeat;
+}
+
+.diagram--75 {
+    background: url(/images/base_75.png) no-repeat;
+}
+
+.diagram--70 {
+    background: url(/images/base_70.png) no-repeat;
+}
+
+.diagram--85 {
+    background: url(/images/base_85.png) no-repeat;
+}
+
+.diagram__value {
+    text-align: center;
+    vertical-align: middle;
+    width: 160px;
+    font-family: 'Titillium Web';
+    font-size: 50px;
+    line-height: 153px;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    color: #3c4761;
+}
+
+.diagram span{
+    font-size: 32px;
+}
+
+/*-------portfolio----------*/
+.portfolio {
+    background-color: #ffdd99;
+    padding: 120px 0 109px 0;
+}
+
+.menu__links.menu__links--porfolio {
+    justify-content: center;
+    align-items: center;
+    margin-top: 42px;
+}
+
+.links__item--porfolio {
+    margin: 0 5px;
+    padding: 12px 23px;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0.07);
+    color: #393939;
+}
+
+.links__item--porfolio a{
+    font-family: 'Titillium Web';
+    font-size: 18px;
+    line-height: 19px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #393939;
+}
+
+.links__item--porfolio:hover {
+    background-color: #ffffff;
+}
+
+
+
+.item-block.item-block--portfolio {
+    width: 541px;
+}
+
+.description__name--porfolio {
+    margin-top: 32px;
+    font-family: 'Titillium Web';
+    font-size: 18px;
+    line-height: 19px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    color: #393939;
+}
+
+.btn__more-projects {
+    margin-top: 83px;
+    background-color: #17c2a4;
+}
+
+/*-------testimonials----------*/
+.testimonials {
+    background-color: #d74680;
+    padding: 119px 0 54.5px 0;
+}
+
+.items-container--testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.testimonials-block {
+    padding-left: 144px;
+    width: 370px;
+    margin: 73.5px 0;
+}
+
+.testimonials-block::before {
+    content: "";
+    width: 96px;
+    height: 96px;
+    background-color: #787878;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: -144px;
+}
+
+.feed-back {
+    font-family: 'Titillium Web';
+    font-size: 21px;
+    line-height: 31px;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+}
+
+.author {
+    font-family: 'Titillium Web';
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-style: normal;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    margin-top: 28px;
+}
+
+.author-position {
+    font-family: 'Titillium Web';
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #ffdd99;
+}
+
+/*-----get-in-touch------*/
+.get-in-touch {
+    background-color: #3c5499;
+    padding: 120px 0 115px;
+}
+
+.form {
+    margin: 76px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.name,
+.email {
+    width: 414px;
+    height: 56px;
+    background-color: #273a71;
+    border-radius: 5px;
+    border: none;
+    margin: 0 16px;
+}
+.message {
+    width: 860px;
+    height: 200px;
+    background-color: #273a71;
+    border-radius: 5px;
+    border: none;
+    margin: 27px 16px 0;
+}
+
+
+
+.btn__send-message {
+    margin-top: 59px;
+    background-color: #30bae7;
 }
