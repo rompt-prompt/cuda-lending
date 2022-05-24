@@ -65,7 +65,7 @@ ul {list-style-type: none;}
 
 .width-wrapper {
     outline: 1px dotted red;
-    width: 1102px;
+    max-width: 1102px;
     margin: 0 auto 0 auto;
 }
 
@@ -468,33 +468,102 @@ title:after {
 }
 
 .form {
-    margin: 76px 0 0 0;
+    width: 860px;
+    margin: 76px auto 0 auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
 }
 
-.name,
-.email {
+.field {
+    position: relative;
+    margin: 13.5px 0;
+}
+
+.field--small {
     width: 414px;
     height: 56px;
-    background-color: #273a71;
-    border-radius: 5px;
-    border: none;
-    margin: 0 16px;
 }
-.message {
+
+.field--big {
     width: 860px;
-    height: 200px;
-    background-color: #273a71;
-    border-radius: 5px;
-    border: none;
-    margin: 27px 16px 0;
+    min-height: 200px;
 }
 
+.field__input {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    background-color: #273a71;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    padding-left: 25px;
+    resize:vertical;
+}
 
+.field__input--big {
+    padding-top: 15px;
+}
+
+.field__input:focus {
+    outline: 1px solid #1b2d63;
+}
+
+.field__placeholder {
+    position: absolute;
+    left: 0;
+    top: 15px;
+    margin-left: 22px;
+    font-family: 'Titillium Web';
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    transition: 0.1s;
+}
+
+.field__placeholder span {
+    color: #ff4444;
+}
+
+.field__input:placeholder-shown:focus ~ .field__placeholder,
+.field__input:not(:placeholder-shown) ~ .field__placeholder {
+    top: -25px;
+    left: -20px;
+}
 
 .btn__send-message {
     margin-top: 59px;
     background-color: #30bae7;
+}
+
+/*-------footer-------*/
+.footer {
+    background-color: #344b8e;
+    padding: 48px 0 41px 0;
+}
+
+.footer__links {
+    display: flex;;
+    justify-content: center;
+}
+
+.link a{
+    font-family: 'Titillium Web';
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+}
+
+.link a:hover {
+    color: #30bae7;
+}
+
+.link:not(:last-child) {
+    margin-right: 57px;
 }
